@@ -1,0 +1,187 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+.btn-primary{
+    background-color: #00367e !important;
+    color: white !important;
+    border-color: #00367e !important;
+    border-radius: 25px !important;
+}
+.bg-primary{
+    background-color: #00367e !important;
+}
+.nav-item a:hover{
+    color: #00367e !important;
+}
+.lcp-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}  
+.btn-outline-primary{
+    border-color: #00367e !important;
+    color: #00367e !important;
+}  
+.btn-outline-primary:hover{
+    color: #fff !important;
+    background-color: #00367e !important;
+}
+.btn-secondary{
+    background-color: #ddd !important;
+    border-color: #ddd !important;
+    color: #00367e !important;
+    font-weight: 500 !important;
+}
+.btn-secondary:hover{
+    background-color: #00367e !important;
+    color: #ffffff !important;
+}
+.color-ucma{
+    color: #00367e;
+}
+.text-primary{
+    color: #00367e !important;
+}
+.odontologia-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url('../icons/Odontologia-color.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+  
+  .icon-btn-odontologia-alt:hover .odontologia-icon {
+    background-image: url('../icons/Odontologia-blanco.svg');
+}
+.maestrias-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url('../icons/Maestria-color.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+  
+.icon-btn-maestrias-alt:hover .maestrias-icon {
+    background-image: url('../icons/Mestria-blanco.svg');
+}
+.licenciaturas-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url('../icons/Licenciaturas-color.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+  
+.icon-btn-licenciaturas-alt:hover .licenciaturas-icon {
+    background-image: url('../icons/Licenciaturas-blanco.svg');
+}
+.licenciaturas-online-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url('../icons/Licenciaturas-online-color.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+  
+.icon-btn-licenciaturas-online-alt:hover .licenciaturas-online-icon {
+    background-image: url('../icons/Licenciaturas-online-blanco.svg');
+}
+.licenciaturas-sabatinas-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url('../icons/Licenciaturas-sabatinas-color.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.icon-btn-licenciaturas-sabatinas-alt:hover .licenciaturas-sabatinas-icon {
+    background-image: url('../icons/Licenciaturas-sabatinas-blanco.svg');
+}
+.video-banner {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    line-height: 0;
+}
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+@media (max-width: 767px) {
+  .video-banner {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .video-banner video {
+    height: auto;
+    max-height: none;
+  }
+}
+.navbar-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}  
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-carreras{
+    background: linear-gradient(to top, rgba(0,54,126,0.7), transparent);
+}
+.submenu-wrapper {
+    position: relative;
+}
+.submenu-carreras {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+    padding-left: 1.5rem;
+}
+.submenu-carreras a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #00367e;
+    font-weight: 500;
+    text-decoration: none;
+}
+.submenu-carreras a:hover {
+    text-decoration: underline;
+}
+@media (min-width: 992px) {
+    .submenu-wrapper:hover .submenu-carreras {
+      opacity: 1;
+      visibility: visible;
+      max-height: 500px;
+    }
+}
+#imagenLicenciatura {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+}
+#imagenLicenciatura.fade-out {
+    opacity: 0;
+}
+  
