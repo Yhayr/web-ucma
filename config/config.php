@@ -1,2 +1,3 @@
-<?php
-$baseUrl = "https://ucma.eduxam.net";
+<?php
+$baseUrl = "http://127.0.0.1:5500";
+
